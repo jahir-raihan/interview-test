@@ -1,3 +1,3 @@
 from django.test import TestCase
 
-# Create your tests here.
+# There's no use case, so this time Tests will be None.
