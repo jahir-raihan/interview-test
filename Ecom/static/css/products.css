@@ -721,7 +721,7 @@ header .only-navicons:hover {
 .loader {
   position: absolute;
   bottom: -50%;
-  right: 50%;
+  right: 48%;
   font-size: 18px;
   display: none;
 }
