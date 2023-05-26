@@ -721,9 +721,12 @@ header .only-navicons:hover {
 .loader {
   position: absolute;
   bottom: -50%;
-  right: 48%;
+  width:100%;
+  align-items:center;
+  justify-content:center;
   font-size: 18px;
   display: none;
+
 }
 
 .line {

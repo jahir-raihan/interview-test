@@ -179,7 +179,7 @@ function warranty(year){
 
 function trigger(){
 
-    document.getElementById('loader-product-page').style.display = 'block'
+    document.getElementById('loader-product-page').style.display = 'flex'
 
     // Sending request
     let req = $.ajax({
