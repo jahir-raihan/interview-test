@@ -14579,6 +14579,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Important-Note:-We-know-that-TSP-doesn't-have-any-optimal-solutions,-so-it"><strong>Important Note:</strong> We know that TSP doesn't have any optimal solutions, so it<a class="anchor-link" href="#Important-Note:-We-know-that-TSP-doesn't-have-any-optimal-solutions,-so-it">&#182;</a></h1><h1 id="can-produce-different-solutions-on-different-methods-based-on-efficiency.">can produce different solutions on different methods based on efficiency.<a class="anchor-link" href="#can-produce-different-solutions-on-different-methods-based-on-efficiency.">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Bank-Locations">Bank Locations<a class="anchor-link" href="#Bank-Locations">&#182;</a></h1>
 <pre><code>ID  Latitude            Longitude            Address
 
@@ -14605,8 +14616,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 </code></pre>
-<h2 id="Traveling-Sales-Man-problem">Traveling Sales Man problem<a class="anchor-link" href="#Traveling-Sales-Man-problem">&#182;</a></h2><p>The problem is to visit all the cities or locations exactly once with minimum traveling distance or cost.</p>
-<p><strong>There's a ton of different apporoaches to solve this particular problem but, For this Bank Location problem i will use Dynamic Programming Approach, which is also called top-down or recursive and memoization approach.</strong></p>
+<h2 id="Traveling-Sales-Man-problem">Traveling Sales Man problem<a class="anchor-link" href="#Traveling-Sales-Man-problem">&#182;</a></h2><p>The problem is to visit all the cities or locations exactly once with minimum traveling distance or cost as much as possible.</p>
 
 </div>
 </div>
@@ -14618,7 +14628,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Calculating-the-distance-between-these-bank-addresses-by-their-Latitute-,-Longitude-using-Haversine-formula,-and-storing-them-in-a-cost-matrix-%22g%22-for-further-evaluation">Calculating the distance between these bank addresses by their Latitute , Longitude using Haversine formula, and storing them in a cost matrix "g" for further evaluation<a class="anchor-link" href="#Calculating-the-distance-between-these-bank-addresses-by-their-Latitute-,-Longitude-using-Haversine-formula,-and-storing-them-in-a-cost-matrix-%22g%22-for-further-evaluation">&#182;</a></h3>
+<h3 id="Calculating-the-distance-between-these-bank-addresses-by-their-Latitute-,-Longitude-using-Haversine-formula,">Calculating the distance between these bank addresses by their Latitute , Longitude using Haversine formula,<a class="anchor-link" href="#Calculating-the-distance-between-these-bank-addresses-by-their-Latitute-,-Longitude-using-Haversine-formula,">&#182;</a></h3><h3 id="and-storing-them-in-a-cost-matrix-%22g%22-for-further-evaluation">and storing them in a cost matrix "g" for further evaluation<a class="anchor-link" href="#and-storing-them-in-a-cost-matrix-%22g%22-for-further-evaluation">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14627,7 +14637,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">radians</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">asin</span><span class="p">,</span> <span class="n">sqrt</span>
@@ -14680,7 +14690,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span>
@@ -14701,7 +14711,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
@@ -14732,8 +14742,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="We-got-the-distance-between-cities-in-km.">We got the distance between cities in km.<a class="anchor-link" href="#We-got-the-distance-between-cities-in-km.">&#182;</a></h3><p><strong>For Reference g[0][0] = "Uttara Branch" &amp; g[0][1] = "Distance from Uttara Branch to City Bank Airport "</strong> And g[1][0] = "Distance from Uttara Branch to City Bank Airport" and so on.</p>
+<h3 id="Now-we-got-the-distances-between-cities-in-form-of-km-in-matrix-%22g%22">Now we got the distances between cities in form of km in matrix "g"<a class="anchor-link" href="#Now-we-got-the-distances-between-cities-in-form-of-km-in-matrix-%22g%22">&#182;</a></h3><p><strong>For Reference <code> g[0][0] = "Uttara Branch" </code> &amp; <code> g[0][1] = "Distance from Uttara Branch to City Bank Airport" </code> <br></strong> <code> And g[1][0] = "Distance from Uttara Branch to City Bank Airport" </code> and so on.**</p>
 
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Now-we-will-convert-this-matrix-to-an-adjacency-Matrix-for--%22Nearest-Neighbour%22-Method.">Now we will convert this matrix to an adjacency Matrix for  "Nearest Neighbour" Method.<a class="anchor-link" href="#Now-we-will-convert-this-matrix-to-an-adjacency-Matrix-for--%22Nearest-Neighbour%22-Method.">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14742,39 +14763,25 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now we got the distances between cities in form of km in matrix "g".</span>
-<span class="c1"># We will use bitmask to track visited cities , It's faster than real values.</span>
-<span class="c1"># However i coudn't find a way to track the path for this algorithm.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Branch Names</span>
 
-<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Count of cities</span>
-<span class="n">visited</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-<span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">n</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">visited</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># We know that number of distinct possible combinations is 2^n</span>
+<span class="n">branch_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Uttara Branch'</span><span class="p">,</span> <span class="s1">'City Bank Airport'</span><span class="p">,</span> <span class="s1">'City Bank Nikunja'</span><span class="p">,</span> <span class="s1">'City Bank Beside Uttara Diagnostic'</span><span class="p">,</span>
+         <span class="s1">'City Bank Mirpur 12'</span><span class="p">,</span> <span class="s1">'City Bank Le Meridien'</span><span class="p">,</span> <span class="s1">'City Bank Shaheed Sarani'</span><span class="p">,</span> <span class="s1">'City Bank Narayanganj'</span><span class="p">,</span>
+         <span class="s1">'City Bank Pallabi'</span><span class="p">,</span> <span class="s1">'City Bank JFP'</span><span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">tsp</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">mask</span> <span class="o">==</span> <span class="n">visited</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">g</span><span class="p">[</span><span class="n">pos</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="c1"># Adjacency matrix for storing distance between cities -&gt; Only for Nearest Neighbour method.</span>
+<span class="n">dis</span> <span class="o">=</span> <span class="p">{}</span>
 
-    <span class="c1"># Lookup case</span>
-    <span class="k">if</span> <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span>
+<span class="c1"># Inserting distances to the matrix</span>
 
-    <span class="c1"># Loop through unvisited cities</span>
-    <span class="n">ans</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
-    <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-
-        <span class="k">if</span> <span class="n">mask</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">city</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">new_ans</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">pos</span><span class="p">][</span><span class="n">city</span><span class="p">]</span> <span class="o">+</span> <span class="n">tsp</span><span class="p">(</span><span class="n">mask</span> <span class="o">|</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">city</span><span class="p">),</span> <span class="n">city</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">new_ans</span> <span class="o">&lt;</span> <span class="n">ans</span><span class="p">:</span>
-                <span class="n">ans</span> <span class="o">=</span> <span class="n">new_ans</span>
-
-
-    <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">ans</span>
-    <span class="k">return</span> <span class="n">ans</span>
-
-<span class="n">val</span> <span class="o">=</span> <span class="n">tsp</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span> <span class="c1"># We know that the count of branches are 10</span>
+    <span class="n">dis</span><span class="p">[</span><span class="n">branch_names</span><span class="p">[</span><span class="n">idx</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">cost_distance</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">idx</span> <span class="o">!=</span> <span class="n">cost_distance</span><span class="p">:</span>
+            <span class="n">dis</span><span class="p">[</span><span class="n">branch_names</span><span class="p">[</span><span class="n">idx</span><span class="p">]][</span><span class="n">branch_names</span><span class="p">[</span><span class="n">cost_distance</span><span class="p">]]</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">idx</span><span class="p">][</span><span class="n">cost_distance</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14782,15 +14789,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Let's-check-the-Adjacency-Matrix">Let's check the Adjacency Matrix<a class="anchor-link" href="#Let's-check-the-Adjacency-Matrix">&#182;</a></h3>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">val</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">dis</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="s1">'&gt;&gt;&gt;'</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14808,13 +14827,22 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>14.27</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Uttara Branch &gt;&gt;&gt; {&#39;City Bank Airport&#39;: 2.39, &#39;City Bank Nikunja&#39;: 4.44, &#39;City Bank Beside Uttara Diagnostic&#39;: 0.73, &#39;City Bank Mirpur 12&#39;: 5.51, &#39;City Bank Le Meridien&#39;: 5.1, &#39;City Bank Shaheed Sarani&#39;: 1.24, &#39;City Bank Narayanganj&#39;: 1.21, &#39;City Bank Pallabi&#39;: 5.5, &#39;City Bank JFP&#39;: 6.64}
+City Bank Airport &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 2.39, &#39;City Bank Nikunja&#39;: 2.09, &#39;City Bank Beside Uttara Diagnostic&#39;: 1.87, &#39;City Bank Mirpur 12&#39;: 3.19, &#39;City Bank Le Meridien&#39;: 2.74, &#39;City Bank Shaheed Sarani&#39;: 1.35, &#39;City Bank Narayanganj&#39;: 2.11, &#39;City Bank Pallabi&#39;: 3.18, &#39;City Bank JFP&#39;: 4.28}
+City Bank Nikunja &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 4.44, &#39;City Bank Airport&#39;: 2.09, &#39;City Bank Beside Uttara Diagnostic&#39;: 3.96, &#39;City Bank Mirpur 12&#39;: 1.83, &#39;City Bank Le Meridien&#39;: 0.66, &#39;City Bank Shaheed Sarani&#39;: 3.43, &#39;City Bank Narayanganj&#39;: 3.87, &#39;City Bank Pallabi&#39;: 1.83, &#39;City Bank JFP&#39;: 2.2}
+City Bank Beside Uttara Diagnostic &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 0.73, &#39;City Bank Airport&#39;: 1.87, &#39;City Bank Nikunja&#39;: 3.96, &#39;City Bank Mirpur 12&#39;: 4.88, &#39;City Bank Le Meridien&#39;: 4.61, &#39;City Bank Shaheed Sarani&#39;: 0.57, &#39;City Bank Narayanganj&#39;: 1.52, &#39;City Bank Pallabi&#39;: 4.88, &#39;City Bank JFP&#39;: 6.15}
+City Bank Mirpur 12 &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 5.51, &#39;City Bank Airport&#39;: 3.19, &#39;City Bank Nikunja&#39;: 1.83, &#39;City Bank Beside Uttara Diagnostic&#39;: 4.88, &#39;City Bank Le Meridien&#39;: 1.63, &#39;City Bank Shaheed Sarani&#39;: 4.31, &#39;City Bank Narayanganj&#39;: 5.26, &#39;City Bank Pallabi&#39;: 0.01, &#39;City Bank JFP&#39;: 2.12}
+City Bank Le Meridien &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 5.1, &#39;City Bank Airport&#39;: 2.74, &#39;City Bank Nikunja&#39;: 0.66, &#39;City Bank Beside Uttara Diagnostic&#39;: 4.61, &#39;City Bank Mirpur 12&#39;: 1.63, &#39;City Bank Shaheed Sarani&#39;: 4.08, &#39;City Bank Narayanganj&#39;: 4.51, &#39;City Bank Pallabi&#39;: 1.64, &#39;City Bank JFP&#39;: 1.54}
+City Bank Shaheed Sarani &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 1.24, &#39;City Bank Airport&#39;: 1.35, &#39;City Bank Nikunja&#39;: 3.43, &#39;City Bank Beside Uttara Diagnostic&#39;: 0.57, &#39;City Bank Mirpur 12&#39;: 4.31, &#39;City Bank Le Meridien&#39;: 4.08, &#39;City Bank Narayanganj&#39;: 1.66, &#39;City Bank Pallabi&#39;: 4.31, &#39;City Bank JFP&#39;: 5.6}
+City Bank Narayanganj &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 1.21, &#39;City Bank Airport&#39;: 2.11, &#39;City Bank Nikunja&#39;: 3.87, &#39;City Bank Beside Uttara Diagnostic&#39;: 1.52, &#39;City Bank Mirpur 12&#39;: 5.26, &#39;City Bank Le Meridien&#39;: 4.51, &#39;City Bank Shaheed Sarani&#39;: 1.66, &#39;City Bank Pallabi&#39;: 5.26, &#39;City Bank JFP&#39;: 6.03}
+City Bank Pallabi &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 5.5, &#39;City Bank Airport&#39;: 3.18, &#39;City Bank Nikunja&#39;: 1.83, &#39;City Bank Beside Uttara Diagnostic&#39;: 4.88, &#39;City Bank Mirpur 12&#39;: 0.01, &#39;City Bank Le Meridien&#39;: 1.64, &#39;City Bank Shaheed Sarani&#39;: 4.31, &#39;City Bank Narayanganj&#39;: 5.26, &#39;City Bank JFP&#39;: 2.13}
+City Bank JFP &gt;&gt;&gt; {&#39;Uttara Branch&#39;: 6.64, &#39;City Bank Airport&#39;: 4.28, &#39;City Bank Nikunja&#39;: 2.2, &#39;City Bank Beside Uttara Diagnostic&#39;: 6.15, &#39;City Bank Mirpur 12&#39;: 2.12, &#39;City Bank Le Meridien&#39;: 1.54, &#39;City Bank Shaheed Sarani&#39;: 5.6, &#39;City Bank Narayanganj&#39;: 6.03, &#39;City Bank Pallabi&#39;: 2.13}
+</pre>
+</div>
 </div>
 
 </div>
@@ -14822,13 +14850,287 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Brute-Force-Method">Brute Force Method<a class="anchor-link" href="#Brute-Force-Method">&#182;</a></h2><p><strong>This method is optimal but takes too much time, because the time complexity is <code> O(n!) </code> where n is the number of cities</strong> .</p>
+<p>The basic idea of this method is to generate all permutations of the locations and calculate their distance sums than compare with each other to find out the minimum distance.</p>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">permutations</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">maxsize</span>
+
+<span class="k">def</span> <span class="nf">tsp_brute_force</span><span class="p">(</span><span class="n">graph</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+ 
+    <span class="c1"># store all vertex apart from source vertex</span>
+    <span class="n">vertex</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="n">vertex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+ 
+    <span class="c1"># store minimum distance</span>
+    
+    <span class="n">min_path</span> <span class="o">=</span> <span class="n">maxsize</span>
+    <span class="n">next_permutation</span> <span class="o">=</span> <span class="n">permutations</span><span class="p">(</span><span class="n">vertex</span><span class="p">)</span>
+    <span class="n">route</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Uttara Branch'</span><span class="p">]</span>
+    <span class="n">path_indexes</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">next_permutation</span><span class="p">:</span>
+ 
+        <span class="c1"># store current Path weight(cost)</span>
+        <span class="n">current_pathweight</span> <span class="o">=</span> <span class="mi">0</span>
+ 
+        <span class="c1"># compute current path weight</span>
+        <span class="n">k</span> <span class="o">=</span> <span class="n">s</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+            <span class="n">current_pathweight</span> <span class="o">+=</span> <span class="n">graph</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">j</span>
+        <span class="n">current_pathweight</span> <span class="o">+=</span> <span class="n">graph</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+ 
+        <span class="c1"># update minimum</span>
+        <span class="k">if</span> <span class="n">current_pathweight</span> <span class="o">&lt;</span> <span class="n">min_path</span><span class="p">:</span>
+            <span class="n">min_path</span> <span class="o">=</span> <span class="n">current_pathweight</span>
+            <span class="n">path_indexes</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+            
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">path_indexes</span><span class="p">:</span>
+        <span class="n">route</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">branch_names</span><span class="p">[</span><span class="n">p</span><span class="p">])</span>
+         
+    <span class="k">return</span> <span class="n">min_path</span><span class="p">,</span> <span class="n">route</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">tsp_brute_force</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Distance is : "</span><span class="p">,</span> <span class="n">result</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Route is : "</span><span class="p">,</span> <span class="s1">' &gt;&gt;&gt; '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Distance is :  15.24
+Route is :  Uttara Branch &gt;&gt;&gt; City Bank Narayanganj &gt;&gt;&gt; City Bank Nikunja &gt;&gt;&gt; City Bank Le Meridien &gt;&gt;&gt; City Bank JFP &gt;&gt;&gt; City Bank Mirpur 12 &gt;&gt;&gt; City Bank Pallabi &gt;&gt;&gt; City Bank Airport &gt;&gt;&gt; City Bank Shaheed Sarani &gt;&gt;&gt; City Bank Beside Uttara Diagnostic
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Nearest-Neighbour-Method">Nearest Neighbour Method<a class="anchor-link" href="#Nearest-Neighbour-Method">&#182;</a></h2><p><strong>The idea behind the nearest neighbor algorithm is to start at a given/random location and visit the closest location that has not yet been visited with minimum distance. This process is repeated until all locations have been visited. The nearest neighbor algorithm is simple to implement and has a time complexity of <code> O(n^2) </code>, where n is the number of locations.</strong></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Nearest Neighbour Method</span>
+
+<span class="k">def</span> <span class="nf">tsp_nearest_neighbor</span><span class="p">(</span><span class="n">cities</span><span class="p">,</span> <span class="n">distances</span><span class="p">):</span>
+
+    <span class="n">route</span> <span class="o">=</span> <span class="p">[</span><span class="n">cities</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+    <span class="n">remaining_cities</span> <span class="o">=</span> <span class="n">cities</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+
+    <span class="k">while</span> <span class="n">remaining_cities</span><span class="p">:</span>
+        <span class="n">closest_city</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">remaining_cities</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">distances</span><span class="p">[</span><span class="n">route</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]][</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">route</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">closest_city</span><span class="p">)</span>
+        <span class="n">remaining_cities</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">closest_city</span><span class="p">)</span>
+
+    <span class="n">route</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">route</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="n">dist</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">route</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">dist</span> <span class="o">+=</span> <span class="n">distances</span><span class="p">[</span><span class="n">route</span><span class="p">[</span><span class="n">d</span><span class="p">]][</span><span class="n">route</span><span class="p">[</span><span class="n">d</span><span class="o">+</span><span class="mi">1</span><span class="p">]]</span>
+
+    <span class="k">return</span> <span class="n">route</span><span class="p">,</span> <span class="n">dist</span>
+
+<span class="n">route</span><span class="p">,</span> <span class="n">distance</span> <span class="o">=</span> <span class="n">tsp_nearest_neighbor</span><span class="p">(</span><span class="n">branch_names</span><span class="p">,</span> <span class="n">dis</span><span class="p">)</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Distance is: "</span><span class="p">,</span> <span class="n">distance</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Route is :"</span><span class="p">,</span> <span class="s1">' &gt;&gt;&gt; '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">route</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Distance is:  15.54
+
+Route is : Uttara Branch &gt;&gt;&gt; City Bank Beside Uttara Diagnostic &gt;&gt;&gt; City Bank Shaheed Sarani &gt;&gt;&gt; City Bank Airport &gt;&gt;&gt; City Bank Nikunja &gt;&gt;&gt; City Bank Le Meridien &gt;&gt;&gt; City Bank JFP &gt;&gt;&gt; City Bank Mirpur 12 &gt;&gt;&gt; City Bank Pallabi &gt;&gt;&gt; City Bank Narayanganj
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="Dynmic-Programming-Approach">Dynmic Programming Approach<a class="anchor-link" href="#Dynmic-Programming-Approach">&#182;</a></h2><h3 id="This-method-do-have-advantages-and-disadvantages,-It-calculates-most-optimal-solution-but-takes-longer-to-do-that.-For-example-if-we-pass-15-locations-it-will-take-almost-13---16-seconds.-And-if-we-optimize-it-using-memoization-memory-will-be-a-issue-rather-than-run-time">This method do have advantages and disadvantages, It calculates most optimal solution but takes longer to do that. For example if we pass 15 locations it will take almost 13 - 16 seconds. And if we optimize it using memoization memory will be a issue rather than run time<a class="anchor-link" href="#This-method-do-have-advantages-and-disadvantages,-It-calculates-most-optimal-solution-but-takes-longer-to-do-that.-For-example-if-we-pass-15-locations-it-will-take-almost-13---16-seconds.-And-if-we-optimize-it-using-memoization-memory-will-be-a-issue-rather-than-run-time">&#182;</a></h3><h3 id="The-idea-here-to-recursively-visit-all-distinct-permutations-of-the-locations-and-find-out-the-minimum-distance">The idea here to recursively visit all distinct permutations of the locations and find out the minimum distance<a class="anchor-link" href="#The-idea-here-to-recursively-visit-all-distinct-permutations-of-the-locations-and-find-out-the-minimum-distance">&#182;</a></h3><h4 id="Beside-I-was-unable-to-find-a-way-to-keep-track-of-the-path-in-this-algorithm,-maybe-in-future-I-will.">Beside I was unable to find a way to keep track of the path in this algorithm, maybe in future I will.<a class="anchor-link" href="#Beside-I-was-unable-to-find-a-way-to-keep-track-of-the-path-in-this-algorithm,-maybe-in-future-I-will.">&#182;</a></h4>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We will use bitmask to track visited cities , It's faster than real values.</span>
+<span class="c1"># However I coudn't find a way to track the path for this algorithm.</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># Count of cities</span>
+<span class="n">visited</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">n</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">n</span><span class="p">]</span><span class="o">*</span><span class="p">(</span><span class="n">visited</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># We know that number of distinct possible combinations is 2^n</span>
+
+<span class="k">def</span> <span class="nf">tsp_dp</span><span class="p">(</span><span class="n">mask</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">mask</span> <span class="o">==</span> <span class="n">visited</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">g</span><span class="p">[</span><span class="n">pos</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+    <span class="c1"># Lookup case</span>
+    <span class="k">if</span> <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span>
+
+    <span class="c1"># Loop through unvisited cities</span>
+    <span class="n">ans</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="mi">9</span>
+    <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+
+        <span class="k">if</span> <span class="n">mask</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">city</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">new_ans</span> <span class="o">=</span> <span class="n">g</span><span class="p">[</span><span class="n">pos</span><span class="p">][</span><span class="n">city</span><span class="p">]</span> <span class="o">+</span> <span class="n">tsp_dp</span><span class="p">(</span><span class="n">mask</span> <span class="o">|</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">city</span><span class="p">),</span> <span class="n">city</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">new_ans</span> <span class="o">&lt;</span> <span class="n">ans</span><span class="p">:</span>
+                <span class="n">ans</span> <span class="o">=</span> <span class="n">new_ans</span>
+
+
+    <span class="n">dp</span><span class="p">[</span><span class="n">mask</span><span class="p">][</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">ans</span>
+    <span class="k">return</span> <span class="n">ans</span>
+
+<span class="n">val</span> <span class="o">=</span> <span class="n">tsp_dp</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Distance is : "</span><span class="p">,</span> <span class="n">val</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Distance is :  14.27
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><span style="background:#00203FFF;font-size:35px; color:white">Did So Much Research!</span></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div style="width:100%;background:#00203FFF; height:400px; display:flex;align-items:center;justify-content:center;">
+    <p style="width:400px;color:white;font-size:35px ;margin:20% 40%">Thank You !</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span> 
@@ -14839,20 +15141,27 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
 
-     </div>
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Note: you may need to restart the kernel to use updated packages.
+</pre>
 </div>
 </div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">

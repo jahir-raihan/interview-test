@@ -209,7 +209,7 @@ print("Route is : ", ' >>> '.join(result[1]))
 
 
 ## Nearest Neighbour Method
-**The idea behind the nearest neighbor algorithm is to start at a given/random city and visit the closest city that has not yet been visited with minimum distance. This process is repeated until all cities have been visited. The nearest neighbor algorithm is simple to implement and has a time complexity of <code> O(n^2) </code>, where n is the number of cities.**
+**The idea behind the nearest neighbor algorithm is to start at a given/random location and visit the closest location that has not yet been visited with minimum distance. This process is repeated until all locations have been visited. The nearest neighbor algorithm is simple to implement and has a time complexity of <code> O(n^2) </code>, where n is the number of locations.**
 
 
 ```python
